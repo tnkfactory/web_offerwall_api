@@ -1,6 +1,6 @@
 ## TNK 모바일 웹 충전소 연동 가이드 
 
-#### 1. 모바일 웹 충전소 URL
+### 1. 모바일 웹 충전소 URL
 ```
 https://api3.tnkfactory.com/tnk/offerwall.web.main?md_user_nm={md_user_nm}&app_id={app_id}
 ```
@@ -11,7 +11,8 @@ https://api3.tnkfactory.com/tnk/offerwall.web.main?md_user_nm={md_user_nm}&app_i
 | {md_user_nm} | 회원ID (사용자ID) | string(256) | callback url에 파라미터(md_user_nm)로 전달 됩니다. |
 
 
-#### 2. CALLBACK URL (POSTBACK)
+  
+### 2. Callback URL (Postback URL)
 
 사용자가 광고 참여를 통하여 획득한 포인트를 매체사 서버로 실시간 전송 합니다.
 
@@ -34,7 +35,8 @@ Parameters
 리턴값 처리
 
 Tnk 서버에서는 위 URL을 호출하고 HTTP 리턴코드로 200이 리턴되면 정상적으로 처리되었다고 판단합니다.
-만약 200이 아닌 값이 리턴된다면 Tnk 서버는 비정상처리로 판단하고 이후에는 5분 단위 및 1시간 단위로 최대 24시간 동안 반복적으로 호출합니다.
+만약 200이 아닌 값이 리턴된다면 TNK 서버는 비정상처리로 판단하고 이후에는 5분 단위 및 1시간 단위로 최대 24시간 동안 반복적으로 호출합니다.
 
-- 중요! 동일한 Request가 반복적으로 호출될 수 있으므로 seq\_id 값을 사용하시어 반드시 중복체크를 하셔야합니다.
+- 중요! 동일한 Request가 반복적으로 호출될 수 있으므로 seq_id 값을 사용하시어 반드시 중복체크를 하셔야합니다.
+- Callback URL 등록은 TNK 대시보드에서 설정합니다.
 - 연동관련 기술문의는 [tech@tnkfactory.com](mailto:tech@tnkfactory.com)으로 연락 바랍니다.
