@@ -7,8 +7,8 @@ https://api3.tnkfactory.com/tnk/offerwall.web.main?md_user_nm={md_user_nm}&app_i
 
 | **매크로** | **설명** | **최대 길이** | **비고** |
 | --- | --- | --- | --- |
-| {app_id} | 매체 ID | string(32) | TNK 대시보드에서 확인(App ID) 합니다. 매체별로 고정값입니다. |
-| {md_user_nm} | 회원ID (사용자ID) | string(256) | callback url에 파라미터(md_user_nm)로 전달 됩니다. |
+| {app_id} | 매체 APP ID | string(32) | TNK 대시보드에서 확인(App ID) 합니다. 매체별로 고정값입니다. |
+| {md_user_nm} | 회원 ID (사용자 ID) | string(256) | Callback URL에 파라미터(md_user_nm)로 전달 됩니다. |
 
 
   
