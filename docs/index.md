@@ -8,7 +8,7 @@ https://api3.tnkfactory.com/tnk/offerwall.web.main?md_user_nm={md_user_nm}&app_i
 | **매크로** | **설명** | **최대 길이** | **비고** |
 | --- | --- | --- | --- |
 | {app_id} | 매체 APP ID | string(32) | 매체별로 고정값(상수) 이다. (TNK 대시보드에서 확인 - App ID) |
-| {md_user_nm} | 매체 회원 ID (사용자 ID) | string(256) | Callback URL에 파라미터(md_user_nm)로 전달 된다. |
+| {md_user_nm} | 매체사의 회원ID (사용자 ID) | string(256) | Callback URL에 파라미터(md_user_nm)로 전달 된다. 포인트 적립 대상ID. |
 
 
   
