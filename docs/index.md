@@ -7,8 +7,8 @@ https://api3.tnkfactory.com/tnk/offerwall.web.main?md_user_nm={md_user_nm}&app_i
 
 | **매크로** | **설명** | **최대 길이** | **비고** |
 | --- | --- | --- | --- |
-| {app_id} | 매체 APP ID | string(32) | TNK 대시보드에서 확인(App ID) 합니다. 매체별로 고정값입니다. |
-| {md_user_nm} | 회원 ID (사용자 ID) | string(256) | Callback URL에 파라미터(md_user_nm)로 전달 됩니다. |
+| {app_id} | 매체 APP ID | string(32) | 매체별로 고정값(상수) 이다. (TNK 대시보드에서 확인 - App ID) |
+| {md_user_nm} | 매체 회원 ID (사용자 ID) | string(256) | Callback URL에 파라미터(md_user_nm)로 전달 된다. |
 
 
   
@@ -34,7 +34,7 @@ Parameters
 
 리턴값 처리
 
-Tnk 서버에서는 위 URL을 호출하고 HTTP 리턴코드로 200이 리턴되면 정상적으로 처리되었다고 판단합니다.
+TNK 서버에서는 위 URL을 호출하고 HTTP 리턴코드로 200이 리턴되면 정상적으로 처리되었다고 판단합니다.
 만약 200이 아닌 값이 리턴된다면 TNK 서버는 비정상처리로 판단하고 이후에는 5분 단위 및 1시간 단위로 최대 24시간 동안 반복적으로 호출합니다.
 
 - 중요! 동일한 Request가 반복적으로 호출될 수 있으므로 seq_id 값을 사용하시어 반드시 중복체크를 하셔야합니다.
