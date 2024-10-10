@@ -30,7 +30,7 @@ Parameters
 | pay_dt | 포인트 지급시각이다. (System milliseconds) 예) 1577343412017 | long |
 | app_nm | 참여한 광고명 이다. | string(120) |
 | pay_amt | 정산되는 금액. | long |
-| actn_id | - 0 : 설치형- 1 : 실행형- 2 : 액션형- 5 : 구매형 | int |
+| actn_id | - 0 : 설치형- 1 : 실행형- 2 : 액션형 -4 : 클릭형 - 5 : 구매형 | int |
 
 리턴값 처리
 
